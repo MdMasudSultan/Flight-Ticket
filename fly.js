@@ -41,13 +41,10 @@ function EconomyClassTicket(Amount) {
     function subTotalCost() {                       // Sub Total Amount
 
         const firstCount = nameOf("firstCount")                            
-        // const firstCount = document.getElementById('firstCount-value');
-        // const firstCountValue = parseInt(firstCount.value);
+       
         
         const economyCount = nameOf("economyCount")
-        // const economyCount = document.getElementById('economyCount-value');
-        // const economyCountValue = parseInt(economyCount.value);
-
+        
         const subTotal = firstCount * 150 + economyCount * 100;
         document.getElementById('subTotal').innerText = "$" + subTotal;
 
@@ -77,31 +74,5 @@ function EconomyClassTicket(Amount) {
    
    
    
-    // // first plus count 
-
-// document.getElementById('plus-count').addEventListener('click', function(){
-//     const flyTicketCount = document.getElementById('count-value');
-//     const flyCountValue = parseInt(flyTicketCount.value);
-//     const flyPlusCount = flyCountValue + 1 ;
-//     flyTicketCount.value = flyPlusCount
-
-//     const totalAmount = flyPlusCount * 150;
-//     document.getElementById('amount-count').innerText = "($" + totalAmount +")"})
-
-// // first minus count 
-
-// document.getElementById('minus-count').addEventListener('click', function(){
-//     const flyTicketCount = document.getElementById('count-value');
-//     const flyCountValue = parseInt(flyTicketCount.value);
-   
-//     if (flyCountValue > 0) {
-//                   flyMinusCount = flyCountValue - 1;
-//               }
-//     flyTicketCount.value = flyMinusCount;
-
-//     const totalAmount = flyMinusCount * 150;
-//     document.getElementById('amount-count').innerText = "($" + totalAmount +")"
-
-// })
-
+    
 
